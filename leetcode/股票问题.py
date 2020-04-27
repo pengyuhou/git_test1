@@ -1,0 +1,26 @@
+# [7,1,5,3,6,4]
+# k = 1
+# 股票问题 K = 1时
+class Solution(object):
+    def maxProfit(self, prices):
+        l = len(prices)
+        dp = [[None,None]]*l
+        for i in range(l):
+            if i == 0:
+                dp[i][0] = 0
+                dp[i][1] = -prices[i]
+            dp[i][0] = max((dp[i-1][0],dp[i-1][1]+prices[i]))
+            dp[i][1] = max((dp[i-1][1],-prices[i]))
+        return dp[-1][0]
+
+
+
+
+
+if __name__ == "__main__":
+    prices = [7,1,5,3,6,4]
+    print(Solution().maxProfit(prices))
+
+
+
+
