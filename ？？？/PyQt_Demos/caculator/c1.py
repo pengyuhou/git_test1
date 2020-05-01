@@ -232,7 +232,7 @@ class Ui_MainWindow(object):
             s = eval(''.join(res))
             print(s)
             show_label.setText(str(s))
-            res[:] = [str(s)]
+            res[:] = []
 
         self.pushButton_15.clicked.connect(fun_equal)
 
