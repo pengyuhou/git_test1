@@ -13,7 +13,6 @@ class Solution:
         return l
 
 if __name__ == "__main__":
-
     print(Solution().lengthOfLongestSubstring('abcabcbb'))
 
 

@@ -1,9 +1,5 @@
 class Solution1(object):
     def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
         ret = []
         val = -float('inf')
         for i in range(len(nums)):
@@ -12,7 +8,6 @@ class Solution1(object):
                 ret = [nums[i]]
             val = max(val,sum(ret))
         return val
-
 
 class Solution:
     def maxSubArray(self,nums):
