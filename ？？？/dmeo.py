@@ -11,3 +11,13 @@ print(all([True, True, False]))
 a = '   afasdfa   afdasd   '
 ret = a.split()
 print(ret)
+
+a = 10
+x = '13123123'
+print(int(a))
+
+a = [1, 3, 4, 5, 6, 72, 4]
+print(sorted(a))
+
+
+
