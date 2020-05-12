@@ -19,5 +19,8 @@ print(int(a))
 a = [1, 3, 4, 5, 6, 72, 4]
 print(sorted(a))
 
+a = lambda x, y: x + y
 
+res = [a]
 
+print(res[0](6,7))
