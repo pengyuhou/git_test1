@@ -5,8 +5,6 @@ class Solution(object):
         ret = []
         def dfs(p, level, res):
             if level == k + 1:
-                # a=sorted(res)
-                # if a not in ret:
                 ret.append(res.copy())
                 return
             for i in range(len(p)):
@@ -27,7 +25,6 @@ class Solution(object):
         return ret
 
 
-
-
 if __name__ == "__main__":
     print(Solution().combine(13, 13))
+    print(list(reversed([12,3,12,3,12,31])))

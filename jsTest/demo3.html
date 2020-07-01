@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #outer {
+            width: 500px;
+            margin: 50px auto;
+            padding: 10px;
+            background-color: red;
+            /*设置文本居中*/
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            //    点击切换图片
+            //    切换图片修改src即可
+            var img = document.getElementsByTagName('img')[0];
+            // console.log(src)
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var img_arr = ['img/a.jpg', 'img/b.jpg', 'img/c.jpg'];
+            var index = 0;
+
+            //设置提示文字 获取id为info的p元素
+
+            var info = document.getElementById('info');
+            info.innerText = '一共' + img_arr.length + '张图片，当前为第'+(index+1)+'张';
+
+            prev.onclick = function () {
+                // alert('上一张');
+                index--;
+                if (index < 0) {
+                    index = img_arr.length - 1
+                }
+
+                img.src = img_arr[index];
+                info.innerText = '一共' + img_arr.length + '张图片，当前为第'+(index+1)+'张';
+            };
+            next.onclick = function () {
+                // alert('下一张');
+                index++;
+                if (index >= img_arr.length) {
+                    index = 0;
+                }
+
+                img.src = img_arr[index];
+                info.innerText = '一共' + img_arr.length + '张图片，当前为第'+(index+1)+'张';
+            };
+
+        }
+
+
+    </script>
+
+
+    <title>插入图片</title>
+</head>
+<body>
+<div id="outer">
+    <p id="info"></p>
+    <img src="img/a.jpg" alt="雕像"/>
+    <button id="prev">上一张</button>
+    <button id="next">下一张</button>
+</div>
+
+
+</body>
+</html>

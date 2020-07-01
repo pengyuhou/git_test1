@@ -12,7 +12,6 @@ class Solution(object):
                     if ''.join(res.copy()) not in ret:
                         ret.append(''.join(res.copy()))
                 return
-
             for i in a:
                 if res.count('(')==res.count(')'):
                     res.append('(')

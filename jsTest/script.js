@@ -1,1 +1,2 @@
-alert('外部文件代码')
+var vue = require("vue")
+console.log(vue);

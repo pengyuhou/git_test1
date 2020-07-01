@@ -149,15 +149,1026 @@
 
         // var fun = new Function("console.log('???');");
         // fun()
-        window.onload = function () {
-            var a = document.getElementById('btn');
-            a.onclick = function(){alert(a.innerText);};
-        };
+        // window.onload = function () {
+        //     var a = document.getElementById('btn');
+        //     a.onclick = function(){alert(a.innerText);};
+        // };
+        //
+        //class Solution(object):
+        //     def wordBreak(self, s, wordDict):
+        //         dp = [False for _ in range(len(s) + 1)]
+        //         dp[0] = True
+        //         for i in range(1, len(dp)):
+        //             for word in wordDict:
+        //                 if not dp[i] and s[i - len(word):i] == word:
+        //                     dp[i] = dp[i - len(word)]
+        //         return dp[-1]
+
+
+        // var wordBreak = function(s, wordDict) {
+        //     var dp = new Array(s.length+1);
+        //     for (var i = 0; i < dp.length; i++) {
+        //         if (i===0){
+        //             dp[i] = true;
+        //         }
+        //         else {
+        //             dp[i] = false;
+        //         }
+        //
+        //     }
+        //     for (var j = 1; j < dp.length; j++) {
+        //         for (var k = 0; k < wordDict.length; k++) {
+        //             if (dp[j] === false) {
+        //                 if (s.substring(j-wordDict[k].length,j)=== wordDict[k]) {
+        //                     dp[j] = dp[j - wordDict[k].length]
+        //                 }
+        //             }
+        //
+        //         }
+        //     }
+        //     return dp.pop()
+        // };
+        // console.log(wordBreak(s = "applepenapple", wordDict = ["apple","pen"]));
+
+        // var obj = {
+        //     name: 'test',
+        //     color: 'red',
+        //     day: 'sunday',
+        //     number: 5
+        // };
+        // console.log(obj);
+        // // for in 主要用于遍历对象的属性
+        // for (var key in obj){
+        //     console.log(key)
+        // }
+        // // 类似于python的 for in 循环
+        // var arr = [1,2,3,4,'??'];
+        // for (i of arr){
+        //     i = 0;
+        //
+        // }
+        // console.log(arr)
+        // var singleNumber = function(nums) {
+        //     var a = new Map();
+        //     a.keys()
+        //     for (num of nums){
+        //         if num in a.
+        //     }
+        // };
+
+        // /**
+        //  * @param {number[]} nums
+        //  * @return {number}
+        //  */
+        // var singleNumber = function(nums) {
+        //     var a={};
+        //     for (num of nums){
+        //         if (!(num in a)){
+        //             a[num] = 1
+        //         }
+        //         else {
+        //             a[num] ++
+        //         }
+        //     }
+        //     for (num of nums){
+        //         if (a[num]===1){
+        //             return num
+        //         }
+        //     }
+        // };
+        // console.log(singleNumber([1]))
+        /**
+         * @param {number[]} nums
+         * @param {number} k
+         * @return {number}
+         */
+        // var subarraySum = function(nums, k) {
+        //     var a = new Map();
+        //     a.set(0,1);
+        //     cur_sum = 0;
+        //     count = 0;
+        //     for (var i = 0; i < nums.length; i++) {
+        //         cur_sum += nums[i];
+        //         if (a.has(cur_sum-k)){
+        //             count += a.get(cur_sum-k);
+        //         }
+        //         if (a.has(cur_sum)){
+        //             v= a.get(cur_sum)+1;
+        //             a.set(cur_sum,v);
+        //         }
+        //         else {
+        //             a.set(cur_sum,1);
+        //         }
+        //     }
+        //     return count
+        // };
+        // console.log(subarraySum(nums = [1,1,1], k = 2))
+        // /**
+        //  * @param {number[]} nums
+        //  * @param {number} k
+        //  * @return {number}
+        //  */
+        // var numberOfSubarrays = function(nums, k) {
+        //     var a = new Map();
+        //     a.set(0,1);
+        //     odd = 0;
+        //     count = 0;
+        //     for (num of nums){
+        //         if (num%2){
+        //             odd += 1;
+        //         }
+        //         if (a.has(odd-k)){
+        //             count += a.get(odd-k);
+        //         }
+        //         if (a.has(odd)){
+        //             a.set(odd,a.get(odd)+1);
+        //         }else {
+        //             a.set(odd,1);
+        //         }
+        //     }
+        //     return count
+        // };
+        // /**
+        //  * Definition for singly-linked list.
+        //  * function ListNode(val) {
+        //  *     this.val = val;
+        //  *     this.next = null;
+        //  * }
+        //  */
+        // /**
+        //  * @param {ListNode} head
+        //  * @param {number} k
+        //  * @return {ListNode}
+        //  */
+        // function ListNode(val) {
+        //     this.val = val;
+        //     this.next = null;
+        //   }
+        // var reverseKGroup = function(head, k) {
+        //     if (!head){
+        //         return head
+        //     }
+        //     var cur = head;
+        //     var res = [];
+        //     var ret = [];
+        //     while (cur){
+        //         ret.push(cur.val);
+        //         if (ret.length===k){
+        //             res = res.concat(ret.reverse());
+        //             ret.length = 0
+        //         }
+        //         cur = cur.next
+        //     }
+        //     if (ret.length>0){
+        //         res = res.concat(ret)
+        //     }
+        //     var a = ListNode(-1);
+        //     var tmp = a;
+        //     for (var i = 0; i <res.length ; i++) {
+        //         a.next = ListNode(res[i]);
+        //         a = a.next
+        //     }
+        //     return tmp.next
+        // };
+        // //
+        // a = [1,2,3]
+        // b = [4,5,6]
+        // /**
+        //  * @param {number[][]} matrix
+        //  * @param {number} k
+        //  * @return {number}
+        //  */
+        // var kthSmallest = function(matrix, k) {
+        //     var ret = [];
+        //     for (var i = 0; i <matrix.length ; i++) {
+        //         for (var j = 0; j <matrix[0].length ; j++) {
+        //             ret.push(matrix[i][j]);
+        //         }
+        //     }
+        //     ret.sort(function (a,b) {
+        //         return a-b;
+        //     });
+        //     return ret[k-1];
+        // };
+
+        /**
+         * @param {string} ransomNote
+         * @param {string} magazine
+         * @return {boolean}
+         */
+
+        // var canConstruct = function(ransomNote, magazine) {
+        //     var arr = [];
+        //     for (var i = 0; i <magazine.length ; i++) {
+        //         arr.push(magazine[i]);
+        //     }
+        //     for (var i = 0; i <ransomNote.length ; i++) {
+        //         a = arr.indexOf(ransomNote[i]);
+        //         if (a!=-1){
+        //             arr.splice(a,1)
+        //         }else {
+        //             return false
+        //         }
+        //     }
+        //     return true
+        // };
+        // /**
+        //  * @param {number[]} nums
+        //  * @return {number}
+        //  */
+        // var maxProduct = function (nums) {
+        //     ret = nums[0];
+        //     pre_min = nums[0];
+        //     pre_max = nums[0];
+        //
+        //     for (var i = 1; i < nums.length; i++) {
+        //         cur_max = Math.max(pre_max * nums[i], pre_min * nums[i], nums[i]);
+        //         cur_min = Math.min(pre_max * nums[i], pre_min * nums[i], nums[i]);
+        //         ret = Math.max(cur_max,cur_min,ret);
+        //         pre_max = cur_max;
+        //         pre_min = cur_min;
+        //     }
+        //     return ret
+        // };
+        /**
+         * @param {number[]} nums1
+         * @param {number[]} nums2
+         * @param {number} k
+         * @return {number[][]}
+         */
+        // var kSmallestPairs = function (nums1, nums2, k) {
+        //     var ret = [];
+        //     for (i of nums1) {
+        //         for (j of nums2) {
+        //             ret.push([i, j]);
+        //         }
+        //     }
+        //     ret.sort(function (a, b) {
+        //         return a[0] + a[1] - b[0] - b[1];
+        //     });
+        //     return ret.splice(0, k)
+        // };
+        // console.log(kSmallestPairs(nums1 = [1,2,4,5,6], nums2 = [3,5,7,9], k = 3));
+        // /**
+        //  * @param {number[]} T
+        //  * @return {number[]}
+        //  */
+        //
+        // var dailyTemperatures = function(t) {
+        //     t.reverse();
+        //
+        //     var t_cp = [];
+        //     for (var j = 0; j < t.length ; j++) {
+        //         t_cp.push([j,t[j]]);
+        //     }
+        //
+        //     var stack = [t_cp[0]];
+        //     var ret = [];
+        //     for (var k = 0; k <t.length ; k++) {
+        //         ret[k] = 0
+        //     }
+        //     for (var i = 1; i < t.length ; i++) {
+        //         var flag = true;
+        //         while (t_cp[i][1]>=stack[stack.length-1][1]){
+        //             stack.pop();
+        //
+        //             if (stack.length===0){
+        //
+        //                 flag = false;
+        //                 stack.push(t_cp[i]);
+        //                 ret[i] = 0;
+        //                 break
+        //             }
+        //         }
+        //         if (flag){
+        //             ret[i] = i - stack[stack.length-1][0];
+        //             stack.push(t_cp[i]);
+        //         }
+        //     }
+        //     return ret.reverse()
+        //
+        // };
+        // console.log(dailyTemperatures(temperatures = [73, 74, 75, 71, 69, 72, 76, 73]));
+
+
+        /**
+         * @param {string} s
+         * @return {boolean}
+         */
+        // var validPalindrome = function (s) {
+        //
+        //     var left1 = 0;
+        //     var right1 = s.length-1;
+        //     var ret = []
+        //     var fun = function (a, l, r) {
+        //         var left = l;
+        //         var right = r;
+        //         while (left < right && a[left] === a[right]) {
+        //             left += 1;
+        //             right -= 1;
+        //         }
+        //         if(left >= right){
+        //             return true
+        //         } else{
+        //             ret.push(left);
+        //             ret.push(right);
+        //             return false
+        //         }
+        //     };
+        //     if (fun(s,left1,right1)){
+        //         return true
+        //     }else {
+        //         if (fun(s,ret[0],ret[1]-1)){
+        //             return true
+        //         }else {
+        //             if (fun(s,ret[0]+1,ret[1])){
+        //                 return true
+        //             }else {
+        //                 return false
+        //             }
+        //         }
+        //
+        //     }
+        // };
+        // console.log(validPalindrome('abasdaa'));
+
+
+        // /**
+        //  * @param {number[]} nums
+        //  * @param {number} S
+        //  * @return {number}
+        //  * class Solution(object):
+        //     count = 0
+        //     def findTargetSumWays(self, nums, S):
+        //         l = len(nums)
+        //         def dfs(p, res, level):
+        //             if level == l:
+        //                 if res == S:
+        //                     self.count += 1
+        //                 return
+        //             dfs(p[1:], res + p[0], level + 1)
+        //             dfs(p[1:], res - p[0], level + 1)
+        //         dfs(nums, 0, 0)
+        //         return self.count
+        //  */
+        // var findTargetSumWays = function (nums, S) {
+        //     var count = 0;
+        //     var l = nums.length;
+        //     var dfs = function (p, val, level) {
+        //         if (level === l) {
+        //
+        //             if (val === S) {
+        //                 count += 1;
+        //             }
+        //             return
+        //         }
+        //         dfs(p.slice(1), val + p[0], level + 1);
+        //         dfs(p.slice(1), val - p[0], level + 1);
+        //     };
+        //     dfs(nums,0,0);
+        //     return count
+        // };
+        // var a = [1,2,3,4,5];
+        // console.log(a.slice(1,2));
+        // console.log(findTargetSumWays(nums = [1, 1, 1, 1, 1], S = 3));
+        // /**
+        //  * @param {number[]} a
+        //  * @param {number} k
+        //  * @return {number}
+        //  */
+        // var subarraysDivByK = function (a, k) {
+        //     var hash_map = {0:1};
+        //     var val = 0;
+        //     var ret = 0;
+        //     for (var i = 0; i < a.length ; i++) {
+        //         val += a[i];
+        //         if (val%k in hash_map){
+        //             ret += hash_map[val%k];
+        //         }
+        //         if (val%k in hash_map){
+        //             hash_map[val%k] += 1;
+        //         }
+        //         else {
+        //             hash_map[val%k] = 1;
+        //         }
+        //     }
+        //     return ret
+        // };
+        // /**
+        //  *
+        //  * class Solution(object):
+        //     def subarraysDivByK(self, a, k):
+        //         from collections import defaultdict
+        //         hash_map = defaultdict(int)
+        //         hash_map[0] = 1
+        //         val = 0
+        //         ret = 0
+        //         for i in range(len(a)):
+        //             val += a[i]
+        //             ret += hash_map[val % k]
+        //             hash_map[val % k] += 1
+        //         return ret
+        //  * */
+        //
+        // console.log(subarraysDivByK([-1,2,9], 2));
+
+        // /**
+        //  * @param {number[]} nums
+        //  * @return {number}
+        //  */
+        // var rob = function (nums) {
+        //     if (!nums.toString()){
+        //         return 0;
+        //     }
+        //     var dp = new Array(nums.length+1);
+        //     for (var j = 0; j < dp.length ; j++) {
+        //         dp[j] = 0;
+        //     }
+        //     dp[1] = nums[0];
+        //     for (var i = 2; i < dp.length ; i++) {
+        //         dp[i] = Math.max(dp[i-1],dp[i-2]+nums[i-1]);
+        //     }
+        //     return dp[dp.length-1];
+        // };
+        // console.log(rob([121]));
+
+        // /**
+        //  * @param {string} s
+        //  * @return {number}
+        //  */
+        // var countSubstrings = function (s) {
+        //     var dp = [];
+        //     for (let i = 0; i < s.length + 1; i++) {
+        //         var tmp = [];
+        //         for (let j = 0; j < s.length + 1; j++) {
+        //             tmp.push(null);
+        //         }
+        //         dp.push(tmp);
+        //     }
+        //     for (let i = 1; i < dp.length; i++) {
+        //         for (let j = 1; j < dp.length; j++) {
+        //             if (i === j) {
+        //                 dp[i][j] = true;
+        //             }
+        //         }
+        //     }
+        //
+        //     for (let i = 1; i < dp.length; i++) {
+        //         for (let j = 1; j < i + 1; j++) {
+        //             if (i - j === 1) {
+        //                 if (s[i - 1] === s[j - 1]) {
+        //                     dp[j][i] = true;
+        //                 }
+        //                 continue
+        //             }
+        //             if (i != j) {
+        //                 if (s[i - 1] === s[j - 1] && dp[j + 1][i - 1]) {
+        //                     dp[j][i] = true;
+        //                 } else {
+        //                     dp[j][i] = false;
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     var cnt = 0;
+        //     for (let i = 1; i < dp.length; i++) {
+        //         for (let j = 1; j < i+1; j++) {
+        //             if (dp[j][i]){
+        //                 cnt++;
+        //             }
+        //
+        //         }
+        //
+        //     }
+        //     return cnt;
+        // };
+        // console.log(countSubstrings('aaa'))
+
+
+        // /**
+        //  * Definition for a binary tree node.
+        //  * function TreeNode(val) {
+        //  *     this.val = val;
+        //  *     this.left = this.right = null;
+        //  * }
+        //  */
+        // /**
+        //  * @param {TreeNode} root
+        //  * @return {boolean}
+        //  */
+        // function TreeNode(val) {
+        // *
+        //     this.val = val;
+        // *
+        //     this.left = this.right = null;
+        // }
+        //
+        // var isSymmetric = function (root) {
+        //     var recur = function (node1, node2) {
+        //         if ((!node1) && (!node2)) return true;
+        //         if ((!node1) || (!node2)) return false;
+        //         return node1.val === node2.val && recur(node1.left, node2.right) && recur(node1.right, node2.left)
+        //     };
+        //     return recur(root, root)
+        // };
+
+        // /**
+        //  * Definition for a binary tree node.
+        //  * function TreeNode(val) {
+        //  *     this.val = val;
+        //  *     this.left = this.right = null;
+        //  * }
+        //  */
+        // /**
+        //  * @param {TreeNode} root
+        //  * @param {number} val
+        //  * @return {TreeNode}
+        //  */
+        // function TreeNode(val) {
+        //     this.val = val;
+        //     this.left = this.right = null;
+        // }
+        //
+        // var searchBST = function (root, val) {
+        //     if (!root)return null;
+        //     if (root.val===val)return root;
+        //     var a = searchBST(root.left,val);
+        //     var b = searchBST(root.right,val);
+        //     if (a)return a;
+        //     return b;
+        // };
+
+        // /**
+        //  * Definition for a binary tree node.
+        //  * function TreeNode(val) {
+        //  *     this.val = val;
+        //  *     this.left = this.right = null;
+        //  * }
+        //  */
+        // /**
+        //  * @param {TreeNode} root
+        //  * @param {number} k
+        //  * @return {boolean}
+        //  */
+        // var findTarget = function (root, k) {
+        //     var ret = [];
+        //     var dfs = function (node) {
+        //         if (!node) return null;
+        //         dfs(node.left);
+        //         ret.push(node.val);
+        //         dfs(node.right);
+        //     };
+        //     var index1 = 0;
+        //     var index2 = ret.length - 1;
+        //     while (index1 < ret.length && index2 >= 0 && index1 < index2) {
+        //         if (ret[index1] + ret[index2] === k) return true;
+        //         if (ret[index1]+ret[index2]>k)index2-=1;
+        //         if (ret[index1]+ret[index2]<k)index1+=1;
+        //     }
+        //     return false;
+        // };
+
+
+        // /**
+        //  * Definition for a binary tree node.
+        //  * function TreeNode(val) {
+        //  *     this.val = val;
+        //  *     this.left = this.right = null;
+        //  * }
+        //  */
+        // /**
+        //  * @param {TreeNode} root
+        //  * @param {number} L
+        //  * @param {number} R
+        //  * @return {TreeNode}
+        //  */
+        // var trimBST = function (root, L, R) {
+        //     if (!root) return null;
+        //     if (root.val <= R && root.val >= L) {
+        //         root.left = trimBST(root.left, L, R);
+        //         root.right = trimBST(root.right, L, R);
+        //         return root;
+        //     }else if (root.val>R){
+        //         return trimBST(root.left, L, R);
+        //     } else if (root.val<L){
+        //         return trimBST(root.right, L, R);
+        //     }
+        // };
+
+        // /**
+        //  * Definition for a binary tree node.
+        //  * function TreeNode(val) {
+        //  *     this.val = val;
+        //  *     this.left = this.right = null;
+        //  * }
+        //  */
+        // /**
+        //  * @param {TreeNode} root
+        //  * @return {TreeNode}
+        //  */
+        // function TreeNode(val) {
+        //     this.val = val;
+        //     this.left = this.right = null;
+        // }
+        //
+        // var increasingBST = function (root) {
+        //     var ret = [];
+        //     var dfs = function (node) {
+        //         if (!node) return null;
+        //         dfs(node.left);
+        //         ret.push(node.val);
+        //         dfs(node.right);
+        //     };
+        //     dfs(root);
+        //     console.log(ret)
+        //     var a = new TreeNode(-1);
+        //     var tmp = a;
+        //     while (ret){
+        //         a.right = TreeNode(ret.shift());
+        //         a = a.right;
+        //     }
+        //     return tmp.right;
+        // };
+
+        // /**
+        //  * @param {number[]} candies
+        //  * @param {number} extraCandies
+        //  * @return {boolean[]}
+        //  */
+        // var kidsWithCandies = function(candies, extraCandies) {
+        //     var max_val = Math.max(...candies);
+        //     var ret = [];
+        //     for (let i = 0; i < candies.length; i++) {
+        //         if (candies[i]+extraCandies>=max_val)ret.push(true);
+        //         else ret.push(false);
+        //     }
+        //     return ret
+        // };
+
+
+        // /**
+        //  * Initialize your data structure here.
+        //  */
+        // var MagicDictionary = function() {
+        //     var a = [];
+        //
+        //
+        // };
+        //
+        // /**
+        //  * Build a dictionary through a list of words
+        //  * @param {string[]} dict
+        //  * @return {void}
+        //  */
+        // MagicDictionary.prototype.buildDict = function(dict) {
+        //     MagicDictionary.prototype.a
+        //
+        //
+        //
+        //
+        // };
+        //
+        // /**
+        //  * Returns if there is any word in the trie that equals to the given word after modifying exactly one character
+        //  * @param {string} word
+        //  * @return {boolean}
+        //  */
+        // MagicDictionary.prototype.search = function(word) {
+        //
+        // };
+        //
+        // /**
+        //  * Your MagicDictionary object will be instantiated and called as such:
+        //  * var obj = new MagicDictionary()
+        //  * obj.buildDict(dict)
+        //  * var param_2 = obj.search(word)
+        //  */
+
+        /**
+         * Definition for Employee.
+         * function Employee(id, importance, subordinates) {
+         *     this.id = id;
+         *     this.importance = importance;
+         *     this.subordinates = subordinates;
+         * }
+         */
+
+        /**
+         * @param {Employee[]} employees
+         * @param {number} id
+         * @return {number}
+         */
+
+        // function Employee(id, importance, subordinates) {
+        //     this.id = id;
+        //     this.importance = importance;
+        //     this.subordinates = subordinates;
+        // }
+
+
+        // var GetImportance = function (employees, id) {
+        //     var queue = [];
+        //     var search = function (idf) {
+        //         for (let i = 0; i < employees.length; i++) {
+        //             if (employees[i].id === idf) return employees[i];
+        //         }
+        //     };
+        //     queue.push(search(id));
+        //     console.log(queue)
+        // var cnt = 0;
+        // while (queue.length){
+        //     var a = queue.unshift();
+        //     cnt += a.importance;
+        //     for (let i = 0; i < a.subordinates; i++) {
+        //         queue.push(a.subordinates[i])
+        //     }
+        // }
+        // return cnt;
+        // var GetImportance = function (employees, id) {
+        //     var queue = [];
+        //     var search = function (idf) {
+        //         for (let i = 0; i < employees.length; i++) {
+        //             if (employees[i].id === idf) return employees[i];
+        //         }
+        //     };
+        //     queue.push(search(id));
+        //     console.log(queue)
+        // var cnt = 0;
+        // while (queue.length){
+        //     var a = queue.unshift();
+        //     cnt += a.importance;
+        //     for (let i = 0; i < a.subordinates; i++) {
+        //         queue.push(a.subordinates[i])
+        //     }
+        // }
+        // return cnt;
+        // };
+        // for (let i = 0; i < a.length; i++) {
+        //     console.log(a[i])
+        //
+        // }
+        // a.forEach(function (i,j,k) {
+        //     console.log(k)
+        // })
+        // var b = {"hpy":1,'hh':2};
+
+        // /**
+        //  * @param {number} n
+        //  * @return {number}
+        //  */
+        // var sumNums = function (n) {
+        //     if (n === 1) return 1;
+        //     return sumNums(n - 1) + n;
+        // };
+        // var a = [1,2,3,4];
+        // for (let i = 0; i < a.length; i++) {
+        //     console.log(a[i])
+        // }
+        // {
+        //     let a =[1,2,3];
+        //     console.log(a)
+        //
+        // }
+        // console.log(a)
+        // var web = 'hpy.com';
+        // console.log(window.screenLeft)
+        // const a = {
+        //     'id':13,
+        //     'name':'hpy',
+        //     'age':18
+        // };
+        // Object.freeze(a);
+        // a.name = 'kk';
+        // console.log(a);
+        // let a = {name:'hpy',age:18}
+        //解包
+        // var a = [1,2];
+        // let [x,y] = a
+        // console.log(y)
+
+
+        // let a = 1;
+        // console.log(a === '1')
+        /**
+         * @param {number} n
+         * @return {boolean}
+         */
+        // var hasAlternatingBits = function (n) {
+        //     let res = [];
+        //     while (n) {
+        //         res.push(n % 2);
+        //         n = parseInt(n / 2)
+        //     }
+        //     for (let i = 1; i < res.length; i++) {
+        //         if (res[i - 1] === res[i]) {
+        //             return false
+        //         }
+        //     }
+        //     return true
+        // };
+        //
+        // console.log(hasAlternatingBits(3))
+
+        // /**
+        //  * @param {number} N
+        //  * @param {number} K
+        //  * @param {number} W
+        //  * @return {number}
+        //  */
+        // var new21Game = function (N, K, W) {
+        //     let dp = new Array(K + W);
+        //     for (let i = K; i < K + W; i++) {
+        //         if (i <= N) dp[i] = 1;
+        //         else dp[i] = 0;
+        //     }
+        //     for (let i = K - 1; i >= 0; i--) {
+        //         if (i === K - 1) {
+        //             var s = 0;
+        //             let a = dp.slice(i + 1, dp.length);
+        //             for (let j = 0; j < a.length; j++) {
+        //                 s += a[j];
+        //             }
+        //         }
+        //         dp[i] = s / W;
+        //         s += dp[i];
+        //         s -= dp[i+W];
+        //     }
+        //     return dp[0]
+        // };
+        // console.log(new21Game(N = 21, K = 17, W = 10))
+
+        /**
+         * @param {number[]} nums
+         * @return {number[]}
+         */
+        // var productExceptSelf = function (nums) {
+        //     let l = nums.length;
+        //     let dp1 = new Array(l);
+        //     let dp2 = new Array(l);
+        //     for (let i = 0; i < dp1.length; i++) {
+        //         if (i === 0) dp1[0] = 1;
+        //         else dp1[i] = nums[i - 1] * dp1[i - 1];
+        //     }
+        //     for (let i = dp2.length-1; i >= 0; i--) {
+        //         if (i===dp2.length-1)dp2[dp2.length-1]=1;
+        //         else dp2[i] = dp2[i+1]*nums[i+1];
+        //     }
+        //     let ret = [];
+        //     for (let i = 0; i < dp1.length; i++) {
+        //         ret.push(dp1[i]*dp2[i])
+        //     }
+        //     return ret
+        // };
+        // console.log(productExceptSelf([1, 2, 3, 4]))
+
+        // var a = [12,3,213,124,1,4];
+        // a.sort(function (a,b) {
+        //     return b-a;
+        // });
+        //
+        // res = a.reduce(function (a,b) {
+        //     return a+b;
+        // })
+        //
+        // console.log(res)
+        // console.log(a.forEach(function (i,j) {
+        //     console.log(i)
+        // }));
+        // console.log(a.splice(2,4));
+        // console.log(a)
+        // console.log(a.slice(2,4))
+        // console.log(a)
+        // var a = {'name':19,'age':12312};
+        // for (let aKey in a) {
+        //     console.log(a[aKey])
+        // }
+        // var a = 'undefined'
+        // console.log(ss == a)
+
+
+        /**
+         * @param {number[][]} graph
+         * @return {number[][]}
+         */
+        // var allPathsSourceTarget = function (graph) {
+        //     var l = graph.length;
+        //     var ret = [];
+        //     var dfs = function (p, index, res) {
+        //         if (index === l - 1) {
+        //             res.push(index);
+        //             var cp = [].concat(res);
+        //             ret.push(cp);
+        //             res.pop();
+        //             return
+        //         }
+        //         for (i of p[index]) {
+        //             res.push(index);
+        //             dfs(p, i, res);
+        //             res.pop();
+        //         }
+        //     };
+        //     dfs(graph, 0, []);
+        //     return ret
+        // console.log(allPathsSourceTarget([[1, 2], [3], [3], []]))
+        // };
+        // class Solution(object):
+        //     def threeSumClosest(self, nums, target):
+        //         l = len(nums)
+        //         nums.sort()
+        //         res = float('inf')
+        //         ret = float('inf')
+        //         for i in range(l - 2):
+        //             left = i + 1
+        //             right = l - 1
+        //             while left < right:
+        //                 x = nums[left] + nums[right] + nums[i]
+        //                 if x > target:
+        //                     if abs(x - target) < res:
+        //                         res = abs(x - target)
+        //                         ret = x
+        //                     right -= 1
+        //                 elif x < target:
+        //                     if abs(x - target) < res:
+        //                         res = abs(x - target)
+        //                         ret = x
+        //                     left += 1
+        //                 else:
+        //                     return target
+        //         return ret
+
+        // var threeSumClosest = function (nums, target) {
+        //         nums.sort(function (a, b) {
+        //             return a - b;
+        //         });
+        //         var l = nums.length;
+        //         var delt = Infinity;
+        //         var ret = Infinity;
+        //         for (var i = 0; i < l - 2; i++) {
+        //             var left = i + 1;
+        //             var right = l - 1;
+        //             while (left < right) {
+        //                 var x = nums[left] + nums[right] + nums[i];
+        //                 if (x > target) {
+        //                     if (delt > Math.abs(x - target)) {
+        //                         delt = Math.abs(x - target);
+        //                         ret = x
+        //                     }
+        //                     right -= 1
+        //                 } else if (x < target) {
+        //                     if (delt > Math.abs(x - target)) {
+        //                         delt = Math.abs(x - target);
+        //                         ret = x
+        //                     }
+        //                     left += 1
+        //                 } else {
+        //                     return target;
+        //                 }
+        //             }
+        //
+        //         }
+        //         return ret;
+        //     };
+        // console.log(threeSumClosest(nums = [-1, 2, 1, -4], target = 1));
 
     </script>
+
+
 </head>
 <body>
-    <button id="btn">我是一个按钮！</button>
+<button id="btn">我是一个按钮！</button>
+
+
+<script>
+    // let str = 'abcdefghijk';
+    // for (let i = 0; i < str.length; i++) {
+    //     let span = document.createElement('span')
+    //     span.style.fontSize = (i+1)*10+'px'
+    //     span.innerHTML = str[i]
+    //     document.body.append(span)
+    //
+    // }
+
+    // console.log(str.slice(2));
+    // console.log(str)
+    // console.log(str.substring(2))
+    // console.log(str.substr(2))
+    // var a = ['ad','java','python','css','html'];
+    // var str = '';
+    // console.log(a.some((word) => {
+    //     return str.includes(word)
+    // }));
+
+    // let a = '12312asdas'
+    // console.log(parseInt(a)+10)
+    // var a = [1]
+    // console.log(Number(a))
+    // console.log(Boolean(0))
+    // let a = 0;
+    // console.log(Boolean(a))
+
+    
+</script>
+
 
 </body>
 </html>

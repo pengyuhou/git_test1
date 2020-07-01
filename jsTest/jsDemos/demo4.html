@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈哈哈哈哈</title>
+</head>
+<body>
+<script>
+    let info = [
+        {'name':'hpy'},
+        {'name':'frf'},
+        {'name':'dasdas'}
+    ];
+    var fun = function () {
+        return `
+
+        ${info.map(item => `<li> ${item.name} <\li>`).join('')}
+        `
+
+    }
+    document.body.innerHTML = fun()
+
+
+</script>
+
+</body>
+</html>
