@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>你好</title>
+    <div>hpyhpy</div>
+    <div>哈哈</div>
     <script type="text/javascript">
         // var i = 0, res;
         // for (i; i < 10; i++) {
@@ -1166,7 +1168,159 @@
     // let a = 0;
     // console.log(Boolean(a))
 
-    
+    // var findLength = function(a, b) {
+    //     var len_a = a.length;
+    //     var len_b = b.length;
+    //     var dp = [];
+    //     for (let i = 0; i < b.length+1; i++) {
+    //         var tmp = []
+    //         for (let j = 0; j < a.length+1; j++) {
+    //             tmp.push(0)
+    //         }
+    //         dp.push(tmp)
+    //     }
+    //     var ret = -Infinity;
+    //     for (let i = 1; i <dp.length ; i++) {
+    //         for (let j = 1; j < dp.length; j++) {
+    //             if (a[j-1]===b[i-1]){
+    //                 dp[i][j] = dp[i-1][j-1]+1;
+    //                 ret = Math.max(ret,dp[i][j]);
+    //             }
+    //         }
+    //     }
+    //     return ret!=-Infinity?ret:0
+    //     };
+    // console.log(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7]));
+
+    // var d = new Date("2020-7-1 19:00:00");
+    // console.log(d)
+    // console.log(d*1)
+    // console.log(d.getTime())
+    // console.log(Number(d))
+    // console.log(d.valueOf())
+
+    // const a = [1,2,3,4,5]
+    // console.log(a)
+    // console.table(a)
+
+    // let divs = document.querySelectorAll('div');
+    // console.log( divs)
+    // console.log( Array.from(divs,function (item) {
+    //     item.style.background = 'green';
+    //     return item
+    //
+    // }))
+
+    // var a = [1,2]
+    // var b = [3,4]
+    // // 展开语法
+    // a = [...a,...b]
+    // console.log(a)
+    // var a = function (...args) {
+    //     return args.reduce((s,v)=>{
+    //         return (s += v)
+    //     },0)
+    // }
+    // console.log(a(1,2,3))
+
+    // var a = [1, 2, 3, 17].reduce((s, v) => {
+    //     return (s *= v)
+    // });
+    // console.log(a)
+
+    // console.log([1, 2, 3].map(function (item) {
+    //     console.log(item)
+    //     return item
+    // }));
+
+    // var divs = document.querySelectorAll('div');
+    // console.log([...divs])
+
+    // var [...arr] = 'asdasdas';
+    // console.log(arr)
+
+
+    // var a = [1,2,3,4,5]
+    // console.log(a)
+    // a[a.length]=100000
+    // console.log(a)
+    // console.log(a.unshift(0))
+    // console.log(a.push(2))
+    // console.log(a)
+
+    // var a = [1,2,3,4,5];
+    // console.log(a)
+    // console.log(a.slice(2, 4));
+    // console.log(a.splice(1,3))
+    //
+    // console.log(a)
+
+    // var a = [1, 2, 3, 4, 5, 6, 7, 8];
+    // // console.log(a.map(function (item) {
+    // //     return item + 1
+    // // }));
+    // [...arr] = a;
+    // console.log([...a])
+
+    // console.log(arr)
+
+
+    /**
+     * Definition for a binary tree node.
+     * function TreeNode(val) {
+     *     this.val = val;
+     *     this.left = this.right = null;
+     * }
+     */
+    /**
+     * @param {number[]} nums
+     * @return {TreeNode}
+     */
+        // function TreeNode(val) {
+        //     this.val = val;
+        //     this.left = this.right = null;
+        // }
+        //
+        // var sortedArrayToBST = function (nums) {
+        //     let l = nums.length;
+        //     if (l===0) {
+        //         return;
+        //     }
+        //     let mid = parseInt(l / 2);
+        //     let a = TreeNode(nums[mid]);
+        //     a.left = sortedArrayToBST(nums.splice(0, mid));
+        //     a.right = sortedArrayToBST(nums.splice(1,l-1-mid));
+        //     return a;
+        // };
+        // var a = [1,2,3,4]
+        // console.log(a.splice(0,2));
+        // console.log(a)
+
+
+        // console.log(a.length)
+        // console.log(Boolean(!a))
+
+        // var a = [1,2,3,4,5,6];
+        // // a.length = 0
+        // console.log(a.includes(1));
+        // console.log(a)
+        // console.log(a.unshift(2))
+        // console.log(a)
+        // console.log(a)
+        // console.log(Array.of(...a))
+        // console.log(a.map(function (a) {
+        //     return a +1;
+        // }));
+    let hd = [1,1, 2, 3, 4, 5, 6, 7];
+    console.log(hd)
+    // console.log(hd.copyWithin(3, 1, 4));
+    console.log(hd.lastIndexOf(1,-3));
+    console.log(hd.reduce(function (a,b) {
+        return a+b
+
+    }));
+
+
 </script>
 
 
